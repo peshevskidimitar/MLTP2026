@@ -1,0 +1,11 @@
+# The notebook environment, for running the materials outside JupyterHub.
+#
+# Install this alongside requirements.txt on your own machine. Do not install
+# it on the Hub. The Hub supplies its own JupyterLab, and installing a
+# different version underneath a running server breaks that server along with
+# the Git and nbgitpuller extensions it depends on.
+#
+# The versions match the Hub image so that a local session behaves the same
+# way. ipykernel and ipywidgets arrive as dependencies of these two.
+jupyterlab==4.6.3
+notebook==7.6.2

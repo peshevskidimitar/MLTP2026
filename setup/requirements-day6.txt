@@ -1,0 +1,11 @@
+# The packages Day 6 needs beyond the base ones.
+#
+# Install them into your home directory, with the base versions as constraints
+# so that pip cannot replace what the image provides. Run it from the
+# repository root:
+#
+#   pip install --user -c setup/requirements.txt -r setup/requirements-day6.txt
+#
+# statsmodels is already present in both flavours of the image. xgboost is
+# present in neither.
+xgboost==3.4.1

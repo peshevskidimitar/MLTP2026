@@ -1,0 +1,15 @@
+# The packages Day 4 needs beyond the base ones.
+#
+# Install them into your home directory, with the base versions as constraints
+# so that pip cannot replace what the image provides. Run it from the
+# repository root:
+#
+#   pip install --user -c setup/requirements.txt -r setup/requirements-day4.txt
+#
+# Day 4 also needs PyTorch, which the GPU flavour of the Hub already provides.
+# Do not install PyTorch yourself. A copy in your home directory takes
+# precedence over the image's CUDA build, and the GPU then stops being used
+# without anything saying so.
+transformers==5.16.1
+datasets==5.0.1
+evaluate==0.4.6

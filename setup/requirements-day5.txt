@@ -1,0 +1,13 @@
+# The packages Day 5 needs beyond the base ones.
+#
+# Install them into your home directory, with the base versions as constraints
+# so that pip cannot replace what the image provides. Run it from the
+# repository root:
+#
+#   pip install --user -c setup/requirements.txt -r setup/requirements-day5.txt
+#
+# Day 5 additionally needs a network route to a language model, which no
+# package can supply.
+openai==3.6.0
+langchain==1.3.18
+langgraph==1.2.11

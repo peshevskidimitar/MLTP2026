@@ -1,0 +1,3 @@
+# The data files are distributed byte for byte, so Git must not rewrite their
+# line endings.
+*.csv -text

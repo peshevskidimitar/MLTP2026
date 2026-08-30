@@ -6,7 +6,6 @@ __pycache__/
 
 # Material that has not been released to the students yet. Delete a day's line
 # when that day's session arrives.
-/Day 1 - Introduction and Review/
 /Day 2 - Data Preparation and Processing/
 /Day 3 - Image Processing and Analysis/
 /Day 4 - Text Processing and Analysis/
@@ -15,7 +14,12 @@ __pycache__/
 /Day 7 - Work on Final Projects/
 /Day 8 - Final Projects and Presentations/
 
+# A day's README.md is the assistant's notes, at the top of the day and beside
+# the data and the notebooks. It says what students are expected to discover,
+# so it is never published.
+Day*/README.md
+Day*/*/README.md
+
 # Solutions are withheld until the session that uses them has finished. Add a
 # negation below for one solution to publish it.
 **/01_laboratory_exercise_solution.ipynb
-**/01_lab_solution.ipynb

@@ -1,0 +1,19 @@
+# The packages every laboratory session needs.
+#
+# The versions below are the ones the JupyterHub image provides, and the
+# notebooks are verified against them. Pinning them keeps a student's results
+# identical to the ones the assistant demonstrates, which matters when a
+# laboratory exercise asks the student to compare a number they produced
+# against a number in the text.
+#
+# On the Hub these are already installed, so installing this file changes
+# nothing and simply confirms it. Installing it is worth doing anyway, because
+# an image that has drifted is easier to discover here than halfway through a
+# session.
+
+# Days 1 to 6 all use these.
+numpy==2.5.2
+pandas==3.0.5
+matplotlib==3.11.1
+seaborn==0.13.2
+scikit-learn==1.9.0
