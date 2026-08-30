@@ -1,0 +1,21 @@
+# The local environment and the leavings of editors and interpreters.
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+
+# Material that has not been released to the students yet. Delete a day's line
+# when that day's session arrives.
+/Day 1 - Introduction and Review/
+/Day 2 - Data Preparation and Processing/
+/Day 3 - Image Processing and Analysis/
+/Day 4 - Text Processing and Analysis/
+/Day 5 - Generative AI and AI Agents/
+/Day 6 - Learning With Time-Varying Data/
+/Day 7 - Work on Final Projects/
+/Day 8 - Final Projects and Presentations/
+
+# Solutions are withheld until the session that uses them has finished. Add a
+# negation below for one solution to publish it.
+**/01_laboratory_exercise_solution.ipynb
+**/01_lab_solution.ipynb
