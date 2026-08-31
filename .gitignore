@@ -14,8 +14,9 @@ __pycache__/
 /Day 7 - Work on Final Projects/
 /Day 8 - Final Projects and Presentations/
 
-# The release procedure is written for whoever publishes the material, not for
-# the students who receive it.
+# The release procedure and the development notes are written for whoever
+# publishes the material, not for the students who receive it.
+DEVELOP.md
 RELEASING.md
 
 # A day's README.md is the assistant's notes, at the top of the day and beside
