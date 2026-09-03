@@ -63,8 +63,9 @@ exact command to run, so there is nothing to work out from this document.
 ## Packages You Install Yourself
 
 Days 3 to 6 each use packages beyond the base ones, listed in a requirements
-file of their own under `setup/`. Two rules govern installing them, and the
-environment check follows both in the commands it prints.
+file of their own under `setup/`. Day 5 needs a key as well as packages, and
+the section after this one says where to put it. Two rules govern installing
+them, and the environment check follows both in the commands it prints.
 
 Install into your home directory with `--user`, because a plain install goes
 into the server's container and disappears the next time the server restarts.
@@ -79,6 +80,55 @@ Never install PyTorch yourself. The GPU flavour provides a build compiled
 against CUDA, and a copy in your home directory would be loaded instead of it,
 on both flavours, with the GPU going unused and nothing saying so. If PyTorch
 is missing, you are on the CPU flavour and the answer is to switch.
+
+## The Key For Day 5
+
+Day 5 is the only day that talks to a language model, and a language model
+needs a credential. Yours is issued to you personally before that session, and
+it is not in this repository and must never be put there.
+
+The endpoint is not OpenAI. It is the faculty's own service, at
+<https://vllm.finki.ukim.mk/v1>, and it serves open-weight models. It speaks
+the same protocol OpenAI does, which is why the notebooks reach it with the
+`openai` client, and why nothing on Day 5 costs money per question.
+
+### Where To Put It
+
+Both of Day 5's notebooks look in two places, in this order, and neither one is
+inside your copy of the repository.
+
+1. The environment variable `OPENAI_API_KEY`.
+2. The file `~/.mltp2026-key`, holding the key and nothing else.
+
+The file is the one to use on the Hub, because it survives a kernel restart and
+a server restart and you only write it once. Open a terminal from the
+JupyterLab launcher and run this, with your own key in place of the example:
+
+```bash
+printf '%s' 'sk-your-own-key-here' > ~/.mltp2026-key
+chmod 600 ~/.mltp2026-key
+```
+
+`~` is your home directory and the repository sits inside it, so the key is
+beside your copy of the material rather than in it. That is the point. A key
+written into a notebook cell travels with that notebook, and a key committed
+once is public forever.
+
+If neither place has a key, the first cell of each notebook stops with one
+sentence telling you so rather than failing somewhere further down.
+
+### What The Endpoint Will And Will Not Do
+
+Each key allows two requests at a time. Nothing in Day 5 sends more than one at
+once, so you will not meet that limit working normally, and you may meet it if
+you leave the walkthrough running and start the laboratory exercise beside it.
+The notebooks retry rather than fail when it happens, waiting a little longer
+each time, so the symptom is slowness rather than an error.
+
+The day names one model and two fallbacks, and the first cell reports which one
+answered. A model name on this endpoint is an alias, and an alias can stop
+pointing at anything without warning, which is why there are fallbacks and why
+the notebooks print the name and the time of the run.
 
 ## Working Outside JupyterHub
 
@@ -115,3 +165,10 @@ to the numbers the assistant demonstrates, which matters when an exercise asks
 you to compare one against the other. If the environment check reports a
 version that differs from a pin, raise it before the first session rather than
 after.
+
+Day 5 is the exception, and it is worth knowing before that session rather than
+during it. Its answers come from a language model on a service outside this
+repository, so no pin here governs them. The database figures it is scored
+against do not move, and the sentences the model writes around them may. Both
+of its notebooks print the model that answered and the time they ran, which is
+what tells a stale output from a wrong one.

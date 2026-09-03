@@ -6,8 +6,27 @@
 #
 #   pip install --user -c setup/requirements.txt -r setup/requirements-day5.txt
 #
-# Day 5 additionally needs a network route to a language model, which no
-# package can supply.
-openai==3.6.0
+# Day 5 additionally needs a network route to a language model and a key for
+# it, which no package can supply. SETUP.md says how to get both.
+#
+# Four lines, and each one is needed. openai is the client the walkthrough
+# writes its agent loop with, and it reaches any endpoint that speaks the same
+# protocol. langchain provides create_agent, which the walkthrough compares
+# that loop against. langchain-openai is what lets langchain talk to the
+# endpoint, and langchain does not depend on it. langgraph arrives as a
+# dependency of langchain, and it is pinned here even though no notebook
+# imports it by name, because the object create_agent returns is a compiled
+# langgraph graph and so langgraph is what actually runs the agent.
+#
+# Two packages that older material for this subject asks for are deliberately
+# absent. langchainhub is not installed because langchain 1.x has no hub module
+# to use it. langchain-community is not installed because nothing in this day
+# imports it, its SQL utilities having been replaced here by a tool the student
+# writes.
+#
+# Resolved against the base pins, this installs 43 packages and replaces none of
+# numpy, pandas, scikit-learn, matplotlib, seaborn, or statsmodels.
+openai==3.7.0
 langchain==1.3.18
+langchain-openai==1.6.0
 langgraph==1.2.11
