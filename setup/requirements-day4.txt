@@ -10,6 +10,10 @@
 # Do not install PyTorch yourself. A copy in your home directory takes
 # precedence over the image's CUDA build, and the GPU then stops being used
 # without anything saying so.
+#
+# One line is enough. transformers brings huggingface_hub, tokenizers,
+# safetensors, and tqdm with it, and the notebooks write their own training
+# loops rather than using the Trainer, so datasets, evaluate, and accelerate
+# are not needed. Resolved against the base pins, this installs 27 packages and
+# replaces none of numpy, pandas, scikit-learn, or PyTorch.
 transformers==5.16.1
-datasets==5.0.1
-evaluate==0.4.6

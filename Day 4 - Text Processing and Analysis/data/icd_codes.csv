@@ -1,0 +1,31 @@
+subcategory,description_pt,description_en
+A021,Septicemia por salmonela,Salmonella septicemia
+A207,Peste septicemica,Septicemic plague
+A227,Septicemia carbunculosa,Anthrax septicemia
+A267,Septicemia por Erysipelothrix,Erysipelothrix septicemia
+A327,Septicemia listeriotica,Listeriotic septicemia
+A400,Septicemia por Streptococcus do grupo A,Group A Streptococcus septicemia
+A401,Septicemia por Streptococcus do grupo B,Group B Streptococcus septicemia
+A402,Septicemia por Streptococcus do grupo D,Group D Streptococcus septicemia
+A403,Septicemia por Streptococcus pneumonia,Streptococcus pneumonia septicemia
+A408,Outras septicemias estreptococicas,Other streptococcal septicemias
+A409,Septicemia estreptococica nao especificada,Unspecified streptococcal septicemia
+A410,Septicemia por Staphylococcus aureus,Staphylococcus aureus septicemia
+A411,Septicemia por outros estafilococos especificados,Other specified staphylococci septicemia
+A412,Septicemia por estafilococos nao especificados,Unspecified staphylococci septicemia
+A413,Septicemia por Haemophilus influenzae,Haemophilus influenzae septicemia
+A414,Septicemia por anaerobios,Anaerobic septicemia
+A415,Septicemia por outros microorganismos gram-negativos,Other gram-negative microorganism septicemia
+A418,Outras septicemias especificadas,Other specified septicemias
+A419,Septicemia nao especificada,Unspecified septicemia
+A427,Septicemia actinomicotica,Actinomycotic septicemia
+B377,Septicemia por Candida,Candidal septicemia
+O883,Embolia septica ou piemica de origem obstetrica,Septic or pyemic embolism of bacterial origin obstetrics
+P360,Septicemia do recem-nascido devida a estreptococo do grupo B,Septicemia of the newborn due to group B streptococcus
+P361,Septicemia do recem-nascido devida a outros estreptococos e aos nao especificados,Septicemia of the newborn due to other and unspecified streptococci
+P362,Septicemia do recem-nascido devida ao Stafilococcus aureus,Septicemia of the newborn due to Staphylococcus aureus
+P363,Septicemia do recem-nascido devida a outros estafilococos e aos nao especificados,Septicemia of the newborn due to other and unspecified staphylococci
+P364,Septicemia do recem-nascido devida a Escherichia coli,Septicemia of the newborn due to Escherichia coli
+P365,Septicemia do recem-nascido devida a anaerobios,Septicemia of the newborn due to anaerobes
+P368,Outras septicemias bacterianas do recem-nascido,Other bacterial septicemias of the newborn
+P369,Septicemia bacteriana nao especificada do recem-nascido,Unspecified bacterial septicemia of the newborn
